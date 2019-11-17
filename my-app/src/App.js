@@ -1,17 +1,26 @@
 import React from 'react';
 import './style.css';
 import './MyComponent';
+import Wrapper from './Wrapper';
+import Photo from "./Photo";
+import Title from "./Title";
 import MyComponent from './MyComponent';
 function App() {
   return(
-  <div style={{border:'solid 1px black',maxWidth:'100vw'}}>
- 
-  <h1 className="title red">My title</h1>
-     {
-       ["/react.png","/logo192.png"].map(e =><p><img src={e}></img></p>)
-     }
-    <MyComponent />
-  </div> 
+  <Wrapper>
+
+	<Photo src="/logo192.png" />
+
+	<Title style={{
+
+		color:'red'
+
+}}>My Name here</Title>
+
+	<Title small>My job here</Title>
+
+
+</Wrapper>
   );  
   
 }
