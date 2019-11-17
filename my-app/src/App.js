@@ -5,21 +5,20 @@ import Wrapper from './Wrapper';
 import Photo from "./Photo";
 import Title from "./Title";
 import MyComponent from './MyComponent';
+import MyButton from "./Mybutton";
 function App() {
   return(
   <Wrapper>
 
 	<Photo src="/logo192.png" />
 
-	<Title style={{
+	<Title small>Akrem Ben Achour</Title>
+<MyButton profileLink="Facebook" onSimpleClick={()=>{window.location.href = "http://facebook.com"}}>
 
-		color:'red'
+</MyButton>
+<MyButton profileLink="" onSimpleClick={()=>{window.location.href = "http://linkedin.com"}}>
 
-}}>My Name here</Title>
-
-	<Title small>My job here</Title>
-
-
+</MyButton>
 </Wrapper>
   );  
   
