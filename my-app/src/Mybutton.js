@@ -4,7 +4,8 @@ import React from "react"
 function MyButton (props) {
     
 return( 
-(props.profileLink=="Facebook")?(<button onClick={props.onSimpleClick}>Facebook Link</button>):(<p>No button link</p>)
+    
+    <button onClick={props.onSimpleClick}>{props.children}</button>
 
 );
 }
